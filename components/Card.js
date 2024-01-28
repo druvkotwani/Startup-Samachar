@@ -1,7 +1,7 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import Image from "next/image";
 import Button from './Button'
-const EachCard = ({ heading, by, read = 3, img, src }) => {
+const EachCard = ({ heading, source, imgSrc, href }) => {
     return (
         <Card className="py-4 hover:scale-105 ">
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
@@ -11,10 +11,10 @@ const EachCard = ({ heading, by, read = 3, img, src }) => {
                         className="rounded-full"
                         height={30}
                         radius="sm"
-                        src={`/${src}.jpeg`}
+                        src={`/${source}.jpeg`}
                         width={30}
                     />
-                    <Button />
+                    <Button href={href} />
                 </div>
                 <h4 className="font-bold text-large SourceCodePro">{heading}</h4>
 
@@ -23,7 +23,7 @@ const EachCard = ({ heading, by, read = 3, img, src }) => {
                 <Image
                     alt="Card background"
                     className="object-cover rounded-xl mt-auto "
-                    src={img}
+                    src={imgSrc}
                     height={270}
                     width={270}
                 />
@@ -31,7 +31,7 @@ const EachCard = ({ heading, by, read = 3, img, src }) => {
             <div className="flex items-center gap-3 mx-auto mt-2">
                 <small className="text-default-500 SourceCodePro">Source: </small>
                 <p className="text-tiny uppercase font-bold SourceCodePro">
-                    {by}
+                    {source}
                 </p>
             </div>
         </Card>
