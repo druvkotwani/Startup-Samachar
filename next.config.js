@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['picsum.photos'],
+        domains: ['images.yourstory.com', 'inc42.com'],
+
     },
 }
 
