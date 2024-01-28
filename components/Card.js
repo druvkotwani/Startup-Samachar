@@ -1,6 +1,6 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import Image from "next/image";
-import Button from './Button'
+import ButtonComponent from './Button'
 const EachCard = ({ heading, source, imgSrc, href }) => {
     return (
         <Card className="py-4 hover:scale-105 ">
@@ -14,7 +14,7 @@ const EachCard = ({ heading, source, imgSrc, href }) => {
                         src={`/${source}.jpeg`}
                         width={30}
                     />
-                    <Button href={href} />
+                    <ButtonComponent href={href} />
                 </div>
                 <h4 className="font-bold text-large SourceCodePro">{heading}</h4>
 
