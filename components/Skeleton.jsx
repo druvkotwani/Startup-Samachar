@@ -13,7 +13,7 @@ export default function SkeletonComponent() {
                         <Skeleton className="h-3 w-3/5 rounded-lg" />
                     </div>
                 </div>
-                <div className="w-full flex flex-col gap-2 mt-2">
+                <div className="w-full flex flex-col gap-2 mt-4">
                     <Skeleton className="h-3 w-1/5 rounded-lg" />
                     <Skeleton className="h-3 w-2/5 rounded-lg" />
                     <Skeleton className="h-3 w-3/5 rounded-lg" />
@@ -22,7 +22,7 @@ export default function SkeletonComponent() {
                 </div>
             </CardHeader>
 
-            <div className="flex items-center justify-center overflow-visible pt-8 pb-2">
+            <div className="flex items-center justify-center overflow-visible pt-8 pb-3">
                 <Card className="mx-auto w-[238px]  space-y-5 p-4" radius="lg">
                     <Skeleton className="rounded-lg">
                         <div className="h-32  rounded-lg bg-default-300"></div>
