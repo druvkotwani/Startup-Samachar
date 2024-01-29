@@ -18,9 +18,9 @@ export default function Home() {
 
   return (
 
-    <div className="min-h-screen flex flex-col mx-auto max-w-screen-xl px-2 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 gap-4 py-4 ">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+    <div className="min-h-screen flex flex-col mx-auto max-w-screen-xl px-2 sm:px-6 lg:px-6">
+      <div className="grid grid-cols-1 gap-6 py-4 ">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
           {
             news.map((function (item, index) {
