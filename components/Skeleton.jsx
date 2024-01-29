@@ -13,7 +13,7 @@ export default function SkeletonComponent() {
                         <Skeleton className="h-3 w-3/5 rounded-lg" />
                     </div>
                 </div>
-                <div className="w-full flex flex-col gap-2 mt-3">
+                <div className="w-full flex flex-col gap-2 mt-2">
                     <Skeleton className="h-3 w-1/5 rounded-lg" />
                     <Skeleton className="h-3 w-2/5 rounded-lg" />
                     <Skeleton className="h-3 w-3/5 rounded-lg" />
