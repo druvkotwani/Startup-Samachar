@@ -7,14 +7,14 @@ const EachCard = ({ heading, source, imgSrc, href }) => {
         <Card className="py-4 hover:scale-105 ">
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <div className="flex items-center justify-between  w-full gap-4 mb-2">
-                    {/* <Image
+                    <Image
                         alt="nextui logo"
                         className="rounded-full"
                         height={30}
                         radius="sm"
                         src={`/${source}.jpeg`}
                         width={30}
-                    /> */}
+                    />
                     {/* <ButtonComponent href={href} /> */}
                 </div>
                 <h4 className="font-bold text-large SourceCodePro">{heading}</h4>

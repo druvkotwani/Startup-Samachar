@@ -34,8 +34,8 @@ export default function SkeletonComponent() {
                     <div className="h-3 w-3/5 rounded-lg bg-default-200"></div>
                 </Skeleton>
             </div>
-            <div className="w-full items-center justify-center flex flex-col gap-2 mt-3">
-                <Skeleton className="h-3 w-3/5 rounded-lg" />
+            <div className="w-full items-center justify-center flex flex-col gap-2 mt-2">
+                <Skeleton className="h-3 w-2/5 rounded-lg" />
             </div>
         </Card>
 
