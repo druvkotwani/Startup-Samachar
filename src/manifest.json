@@ -7,5 +7,5 @@
   },
   "permissions": ["storage", "https://startup-samachar-api.vercel.app/"],
 
-  "content_security_policy": "default-src 'self' connect-src https://startup-samachar-api.vercel.app"
+  "content_security_policy": "default-src 'self'; img-src *; connect-src https://startup-samachar-api.vercel.app"
 }
