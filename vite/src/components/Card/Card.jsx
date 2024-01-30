@@ -1,12 +1,12 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/card";
-import { Button, Image, Link, LinkIcon } from "@nextui-org/react";
+import { Button, Link, LinkIcon } from "@nextui-org/react";
 // import ButtonComponent from './Button'
 const EachCard = ({ heading, source, imgSrc, href }) => {
     return (
         <Card className="py-4 hover:scale-105 mx-6 sm:m-0">
-            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start ">
                 <div className="flex items-center justify-between  w-full gap-4 mb-2">
-                    <Image
+                    <img
                         alt="nextui logo"
                         className="rounded-full"
                         height={30}
@@ -24,10 +24,10 @@ const EachCard = ({ heading, source, imgSrc, href }) => {
 
                 </div>
                 <h4 className="font-bold text-large SourceCodePro">{heading}</h4>
-
             </CardHeader>
+
             <CardBody className="flex items-center justify-center overflow-visible py-2  ">
-                <Image
+                <img
                     alt="Card background"
                     className="object-cover  rounded-xl mt-auto"
                     src={imgSrc}
