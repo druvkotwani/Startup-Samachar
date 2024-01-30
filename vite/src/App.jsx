@@ -19,24 +19,26 @@ export default function App() {
   return (
     <>
       <NavbarComponent />
-      <div className="min-h-screen flex flex-col mx-auto max-w-screen-xl px-2 sm:px-6 lg:px-6 py-16">
-        <div className="grid grid-cols-1 gap-6 py-4 ">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="container mx-auto max-w-7xl pt-16 mt-4 px-6 flex-grow ">
+        <div className="min-h-screen flex flex-col mx-auto max-w-screen-xl px-2 sm:px-6 lg:px-6">
+          <div className="grid grid-cols-1 gap-6 py-4 ">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
-            {
-              loading ? <>
-                {Array.from({ length: 12 }).map((_, index) => {
-                  return <SkeletonComponent key={index} />
-                })}
-              </>
-                :
-                news.map((function (item, index) {
-                  return <Card key={index} heading={item.title} source={item.source} imgSrc={item.imgSrc} href={item.href} />
-                }))
-            }
+              {
+                loading ? <>
+                  {Array.from({ length: 12 }).map((_, index) => {
+                    return <SkeletonComponent key={index} />
+                  })}
+                </>
+                  :
+                  news.map((function (item, index) {
+                    return <Card key={index} heading={item.title} source={item.source} imgSrc={item.imgSrc} href={item.href} />
+                  }))
+              }
 
 
-            {/* <EachCard src='inc42' heading='BNP Paribas On Block Deal Spree, Sells Shares Of Paytm & Policybazaar' by='Team Inc42' img='https://inc42.com/wp-content/uploads/2024/01/bn-zomato-featured--490x367.png' /> */}
+              {/* <EachCard src='inc42' heading='BNP Paribas On Block Deal Spree, Sells Shares Of Paytm & Policybazaar' by='Team Inc42' img='https://inc42.com/wp-content/uploads/2024/01/bn-zomato-featured--490x367.png' /> */}
+            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { Button, Link, LinkIcon } from "@nextui-org/react";
 // import ButtonComponent from './Button'
 const EachCard = ({ heading, source, imgSrc, href }) => {
     return (
-        <Card className="py-4 hover:scale-105 mx-6 sm:m-0">
+        <Card className="py-4 hover:scale-105 ">
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start ">
                 <div className="flex items-center justify-between  w-full gap-4 mb-2">
                     <img
