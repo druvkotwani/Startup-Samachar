@@ -1,9 +1,9 @@
 import React from "react";
-import { Card, CardBody, CardHeader, Skeleton } from "@nextui-org/react";
+import { Card, CardHeader, Skeleton } from "@nextui-org/react";
 
 export default function SkeletonComponent() {
     return (
-        <Card className="py-4 hover:scale-105 ">
+        <Card className="py-4 hover:scale-105 mx-6 sm:m-0 ">
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <div className="flex items-center justify-evenly    w-full gap-4 mb-2">
                     <div>
@@ -34,8 +34,8 @@ export default function SkeletonComponent() {
                     <div className="h-3 w-3/5 rounded-lg bg-default-200"></div>
                 </Skeleton>
             </div>
-            <div className="w-full items-center justify-center flex flex-col gap-2 mt-3">
-                <Skeleton className="h-3 w-3/5 rounded-lg" />
+            <div className="w-full items-center justify-center flex flex-col gap-2 mt-2">
+                <Skeleton className="h-3 w-2/5 rounded-lg" />
             </div>
         </Card>
 
