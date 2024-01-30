@@ -8,6 +8,8 @@ import {
     NavbarItem,
     NavbarMenuItem,
 } from "@nextui-org/navbar"; import { Link } from '@nextui-org/link';
+import { siteConfig } from '../../config/site';
+import { LinkedInIcon, GithubIcon, PortfolioIcon, TwitterIcon } from '../icons/Icons';
 const NavbarComponent = () => {
     return (
         <NextUINavbar maxWidth="xl" className="fixed border-b-2 " position="sticky">
@@ -30,7 +32,7 @@ const NavbarComponent = () => {
                 </NavbarBrand>
             </NavbarContent>
 
-            {/* <NavbarContent
+            <NavbarContent
                 className="hidden sm:flex basis-1/5 sm:basis-full"
                 justify="end">
                 <NavbarItem className="hidden sm:flex gap-4">
@@ -54,11 +56,11 @@ const NavbarComponent = () => {
                     >
                         <PortfolioIcon className="text-default-500" />
                     </Link>
-                    <ThemeSwitch />
+                    {/* <ThemeSwitch /> */}
                 </NavbarItem>
             </NavbarContent>
 
-            <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+            {/* <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
                 <Link isExternal href={siteConfig.links.github} aria-label="Github">
                     <GithubIcon className="text-default-500" />
                 </Link>
