@@ -6,7 +6,7 @@ export default function App() {
     return (
         <Switch
             defaultSelected
-            size="md"
+            size=""
             color="secondary"
             thumbIcon={({ isSelected, className }) =>
                 isSelected ? (
