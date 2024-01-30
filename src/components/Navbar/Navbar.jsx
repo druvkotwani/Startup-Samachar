@@ -2,11 +2,8 @@ import React from 'react'
 import {
     Navbar as NextUINavbar,
     NavbarContent,
-    NavbarMenu,
-    NavbarMenuToggle,
     NavbarBrand,
     NavbarItem,
-    NavbarMenuItem,
 } from "@nextui-org/navbar"; import { Link } from '@nextui-org/link';
 import { siteConfig } from '../../config/site';
 import { LinkedInIcon, GithubIcon, PortfolioIcon, TwitterIcon } from '../icons/Icons';
@@ -18,7 +15,7 @@ const NavbarComponent = () => {
         <NextUINavbar maxWidth="xl" className="fixed border-b-2 " position="sticky">
             <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
                 <NavbarBrand as="li" className="gap-3 max-w-fit">
-                    <Link className="flex justify-start items-center gap-1" href="/">
+                    <div className="flex justify-start items-center gap-1 cursor-pointer" >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24px"
@@ -31,7 +28,7 @@ const NavbarComponent = () => {
                             />
                         </svg>
                         <p className="font-bold text-lg SourceCodePro">Startup Samachar</p>
-                    </Link>
+                    </div>
                 </NavbarBrand>
             </NavbarContent>
 

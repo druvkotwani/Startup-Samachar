@@ -20,7 +20,7 @@ export default function App() {
     }, [theme])
     return (
         <Switch
-            defaultSelected
+            defaultSelected={theme === 'light' ? true : false}
             size="md"
             color="secondary"
             onChange={handleToggle}
