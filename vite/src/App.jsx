@@ -1,12 +1,11 @@
-import { Button, ButtonGroup } from "@nextui-org/react";
+import { Button, ButtonGroup, } from "@nextui-org/react";
+import NavbarComponent from "./components/Navbar/Navbar";
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-      <Button color="primary">
-        Button
-      </Button>
-    </h1>
+    <>
+      <NavbarComponent />
+
+    </>
   )
 }
