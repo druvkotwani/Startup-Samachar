@@ -10,6 +10,9 @@ import {
 } from "@nextui-org/navbar"; import { Link } from '@nextui-org/link';
 import { siteConfig } from '../../config/site';
 import { LinkedInIcon, GithubIcon, PortfolioIcon, TwitterIcon } from '../icons/Icons';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
+
+
 const NavbarComponent = () => {
     return (
         <NextUINavbar maxWidth="xl" className="fixed border-b-2 " position="sticky">
@@ -56,7 +59,7 @@ const NavbarComponent = () => {
                     >
                         <PortfolioIcon className="text-default-500" />
                     </Link>
-                    {/* <ThemeSwitch /> */}
+                    <ThemeSwitcher />
                 </NavbarItem>
             </NavbarContent>
 
