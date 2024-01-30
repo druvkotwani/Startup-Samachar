@@ -3,7 +3,7 @@ import { Card, CardHeader, Skeleton } from "@nextui-org/react";
 
 export default function SkeletonComponent() {
     return (
-        <Card className="py-4 hover:scale-105 ">
+        <Card className="py-4 hover:scale-105 mx-6 sm:m-0 ">
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <div className="flex items-center justify-evenly    w-full gap-4 mb-2">
                     <div>
