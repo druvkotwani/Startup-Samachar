@@ -2,6 +2,7 @@ import NavbarComponent from "./components/Navbar/Navbar";
 import { useState, useEffect } from 'react'
 import Card from './components/Card/Card'
 import SkeletonComponent from './components/Skeleton/Skeleton'
+import { Link } from "@nextui-org/react";
 export default function App() {
   const [news, setNews] = useState([])
   const [loading, setLoading] = useState(true)
@@ -42,6 +43,19 @@ export default function App() {
           </div>
         </div>
       </div>
+
+      <footer className="w-full flex items-center justify-center py-3 SourceCodePro border-t">
+        <span className="text-default-600 ">Made with ❤️ by</span>
+        <Link
+          isExternal
+          className="flex items-center gap-1 text-current"
+          href="https://dhruvkotwani.me"
+          title="dhruvkotwani"
+        >
+          <span>{" "}</span>
+          <span className="text-primary">Dhruv Kotwani</span>
+        </Link>
+      </footer>
     </>
   )
 }
