@@ -1,6 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Startup Samachar",
+  "name": "Startup Samachar ",
+  "description": "Your Daily Dose of Startup News",
+  "homepage_url": "https://startupsamachar.tech",
   "version": "1.0",
   "chrome_url_overrides": {
     "newtab": "index.html"
