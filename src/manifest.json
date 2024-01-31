@@ -1,11 +1,18 @@
 {
-  "manifest_version": 2,
-  "name": "Your Extension Name",
+  "manifest_version": 3,
+  "name": "Startup Samachar",
   "version": "1.0",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "permissions": ["storage", "https://startup-samachar-api.vercel.app/"],
-
-  "content_security_policy": "default-src 'self'; img-src *; connect-src https://startup-samachar-api.vercel.app"
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://startup-samachar-api.vercel.app/*"],
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; img-src *; connect-src https://startup-samachar-api.vercel.app"
+  }
 }
