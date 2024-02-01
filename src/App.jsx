@@ -13,25 +13,25 @@ export default function App() {
       imgSrc: "/promoted1.png",
     },
     {
-      heading: "Could you drop a star on the GitHub repo? That's all I ask 🥺",
-      imgSrc: "/promoted1.png",
+      heading: "Enjoying our project? Drop a star on our GitHub repo to show your support! This will help others to discover the project. 🌟",
+      imgSrc: "/promoted2.png",
     },
     {
-      heading: "Could you drop a star on the GitHub repo? That's all I ask 👻",
-      imgSrc: "/promoted1.png",
+      heading: "Could you please consider dropping a star on our GitHub repository? 👻 ",
+      imgSrc: "/promoted2.png",
     },
     {
       heading: "Could you drop a star on the GitHub repo? It helps a lot! 👋 ",
-      imgSrc: "/promoted1.png",
+      imgSrc: "/promoted3.png",
     },
     {
-      heading: "Can you please share this project with your friends and family? 🙏  ",
-      imgSrc: "/promoted1.png",
+      heading: "Can you please share this project with your friends and family? ✨  ",
+      imgSrc: "/promoted3.png",
     }
   ];
 
 
-  const random = Math.floor(Math.random() * 5) + 1
+  const random = Math.floor(Math.random() * 5)
   const [news, setNews] = useState([])
   const [loading, setLoading] = useState(true)
 
