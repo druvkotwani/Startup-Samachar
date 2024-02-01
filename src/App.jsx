@@ -25,7 +25,7 @@ export default function App() {
     },
     {
       heading: "Can you please share this project with your friends and family? ✨  ",
-      imgSrc: "/promoted4.png",
+      imgSrc: "/promoted4.webp",
     }
   ];
 

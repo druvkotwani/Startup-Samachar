@@ -14,7 +14,7 @@ const PromotedCard = ({ option }) => {
                             className="rounded-full"
                             height={26}
                             radius="sm"
-                            src={`/16.png`}
+                            src={`/16.webp`}
                             width={26}
                         />
                         <h4 className="font-bold text-large SourceCodePro">Startup Samachar</h4>

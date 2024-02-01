@@ -8,13 +8,10 @@ const EachCard = ({ heading, source, imgSrc, href }) => {
         <Card className="py-4 hover:scale-105 SourceCodePro ">
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start ">
                 <div className="flex items-center justify-between  w-full gap-4 mb-2">
-                    <img
-                        alt={`${source} logo`}
-                        className="rounded-full"
-                        height={30}
-                        src={`/${source}.jpeg`}
-                        width={30}
-                    />
+                    <picture>
+                        <source alt={`${source} logo`} srcSet={`/${source}.webp`} className="rounded-full" type="image/webp" width="30" height="30" />
+                        <img src={`/${source}.webp`} alt={`${source} logo`} width="30" height="30" className="rounded-full" />
+                    </picture>
                     <Link href={href} target="_blank" rel="norefferrer" >
                         <Button className="h-8 rounded-md" color="default" endContent={<LinkIcon />} variant="bordered" >
                             <span className="font-semibold  ">
