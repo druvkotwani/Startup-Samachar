@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import Card from './components/Card/Card'
 import SkeletonComponent from './components/Skeleton/Skeleton'
 import { Link } from "@nextui-org/react";
+import EachCard from "./components/Card/Card";
+import PromotedCard from "./components/Promoted/PromotedCard";
 export default function App() {
   const [news, setNews] = useState([])
   const [loading, setLoading] = useState(true)
@@ -24,7 +26,7 @@ export default function App() {
         <div className="min-h-screen flex flex-col mx-auto max-w-screen-xl px-2 sm:px-6 lg:px-6">
           <div className="grid grid-cols-1 gap-6 py-4 ">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-
+              <PromotedCard />
               {
                 loading ? <>
                   {Array.from({ length: 12 }).map((_, index) => {
