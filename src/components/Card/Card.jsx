@@ -2,6 +2,9 @@ import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import { Button, Link, LinkIcon } from "@nextui-org/react";
 // import ButtonComponent from './Button'
 const EachCard = ({ heading, source, imgSrc, href }) => {
+    function headingShortener(str) {
+        return str.length > 90 ? str.substring(0, 90) + " ..." : str;
+    }
     return (
         <Card className="py-4 hover:scale-105 ">
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start ">
@@ -23,7 +26,9 @@ const EachCard = ({ heading, source, imgSrc, href }) => {
                     </Link>
 
                 </div>
-                <h4 className="font-bold text-large SourceCodePro">{heading}</h4>
+                <h4 className="font-bold text-large SourceCodePro">
+                    {headingShortener(heading)}
+                </h4>
             </CardHeader>
 
             <CardBody className="flex items-center justify-center overflow-visible py-2  ">
