@@ -52,7 +52,9 @@ export default function App() {
         <div className="min-h-screen flex flex-col mx-auto max-w-screen-xl px-2 sm:px-6 lg:px-6">
           <div className="grid grid-cols-1 gap-6 py-4 ">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
               <PromotedCard option={options[random]} />
+
               {
                 loading ? <>
                   {Array.from({ length: 12 }).map((_, index) => {
