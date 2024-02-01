@@ -12,7 +12,6 @@ const EachCard = ({ heading, source, imgSrc, href }) => {
                         alt={`${source} logo`}
                         className="rounded-full"
                         height={30}
-                        radius="sm"
                         src={`/${source}.jpeg`}
                         width={30}
                     />
@@ -35,7 +34,7 @@ const EachCard = ({ heading, source, imgSrc, href }) => {
                     alt="Card background"
                     className=" rounded-xl mt-auto"
                     src={imgSrc}
-
+                    width="320" height="67"
                 />
             </CardBody>
             <div className="flex items-center gap-3 mx-auto mt-2 ">

@@ -26,12 +26,12 @@ const PromotedCard = ({ option }) => {
             </a>
             <a href="https://github.com/druvkotwani/Startup-Samachar" target="_blank" rel="noreferrer" className="flex items-center justify-center flex-col mt-auto">
                 <CardBody className="flex items-center justify-center overflow-visible py-2 mt-auto ">
-                    <img
-                        alt="Card background"
-                        className="  rounded-xl "
-                        src={option.imgSrc}
 
-                    />
+                    <picture>
+                        <source srcSet={option.imgSrc} type="image/webp" width="320" height="67" />
+                        <img src={option.imgSrc} alt="Card background" width="320" height="67" className="rounded-xl" />
+                    </picture>
+
                 </CardBody>
                 <div className="flex items-center gap-3 mx-auto mt-2 bg-default-300  px-16 py-2 rounded-md ">
                     <p className="text-tiny uppercase font-bold SourceCodePro">

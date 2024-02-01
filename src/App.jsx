@@ -9,23 +9,23 @@ export default function App() {
   const options = [
     {
       heading: "Startup Samachar delivers instant access to Indian startup news and articles.",
-      imgSrc: "/promoted1.png",
+      imgSrc: "/promoted1.webp",
     },
     {
       heading: "Enjoying our project? Drop a star on our GitHub repo to show your support! This will help others to discover the project. 🌟",
-      imgSrc: "/promoted2.png",
+      imgSrc: "/promoted2.webp",
     },
     {
       heading: "Could you please consider dropping a star on our GitHub repository? 👻 ",
-      imgSrc: "/promoted2.png",
+      imgSrc: "/promoted3.webp",
     },
     {
       heading: "Could you drop a star on the GitHub repo? It helps a lot! 👋 ",
-      imgSrc: "/promoted3.png",
+      imgSrc: "/promoted4.webp",
     },
     {
       heading: "Can you please share this project with your friends and family? ✨  ",
-      imgSrc: "/promoted4.gif",
+      imgSrc: "/promoted4.png",
     }
   ];
 
