@@ -24,7 +24,7 @@ const PromotedCard = ({ option }) => {
                     </h4>
                 </CardHeader>
             </a>
-            <a href="https://github.com/druvkotwani/Startup-Samachar" className="flex items-center justify-center flex-col mt-auto">
+            <a href="https://github.com/druvkotwani/Startup-Samachar" target="_blank" rel="noreferrer" className="flex items-center justify-center flex-col mt-auto">
                 <CardBody className="flex items-center justify-center overflow-visible py-2 mt-auto ">
                     <img
                         alt="Card background"
