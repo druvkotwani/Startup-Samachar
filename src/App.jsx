@@ -6,6 +6,32 @@ import { Link } from "@nextui-org/react";
 import EachCard from "./components/Card/Card";
 import PromotedCard from "./components/Promoted/PromotedCard";
 export default function App() {
+
+  const options = [
+    {
+      heading: "Startup Samachar delivers instant access to Indian startup news and articles.",
+      imgSrc: "/promoted1.png",
+    },
+    {
+      heading: "Could you drop a star on the GitHub repo? That's all I ask 🥺",
+      imgSrc: "/promoted1.png",
+    },
+    {
+      heading: "Could you drop a star on the GitHub repo? That's all I ask 👻",
+      imgSrc: "/promoted1.png",
+    },
+    {
+      heading: "Could you drop a star on the GitHub repo? It helps a lot! 👋 ",
+      imgSrc: "/promoted1.png",
+    },
+    {
+      heading: "Can you please share this project with your friends and family? 🙏  ",
+      imgSrc: "/promoted1.png",
+    }
+  ];
+
+
+  const random = Math.floor(Math.random() * 5) + 1
   const [news, setNews] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -26,7 +52,7 @@ export default function App() {
         <div className="min-h-screen flex flex-col mx-auto max-w-screen-xl px-2 sm:px-6 lg:px-6">
           <div className="grid grid-cols-1 gap-6 py-4 ">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-              <PromotedCard />
+              <PromotedCard option={options[random]} />
               {
                 loading ? <>
                   {Array.from({ length: 12 }).map((_, index) => {

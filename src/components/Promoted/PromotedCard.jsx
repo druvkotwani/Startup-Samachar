@@ -2,13 +2,9 @@ import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import { Button, Link, LinkIcon } from "@nextui-org/react";
 // import ButtonComponent from './Button'
 
-const PromotedCard = () => {
+const PromotedCard = ({ option }) => {
 
-    // const options = {
-    //     option1: {
-    //         heading: 
-    //     }
-    // }
+
     return (
         <Link className="cursor-pointer " href="https://github.com/druvkotwani/Startup-Samachar" >
             <Card className="py-4 hover:scale-105 ">
@@ -25,8 +21,7 @@ const PromotedCard = () => {
                         <h4 className="font-bold text-large SourceCodePro">Startup Samachar</h4>
                     </div>
                     <h4 className="font-bold text-large SourceCodePro">
-                        Startup Samachar delivers instant access to Indian startup
-                        news and articles.
+                        {option.heading}
                     </h4>
                 </CardHeader>
 
