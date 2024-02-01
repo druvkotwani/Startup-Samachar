@@ -64,9 +64,7 @@ const NavbarComponent = () => {
                 <Link isExternal href={siteConfig.links.github} aria-label="Github">
                     <GithubIcon className="text-default-500" />
                 </Link>
-                <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
-                    <LinkedInIcon className=" text-default-500" />
-                </Link>
+
                 <ThemeSwitcher />
             </NavbarContent>
         </NextUINavbar>
