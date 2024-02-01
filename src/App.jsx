@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 import Card from './components/Card/Card'
 import SkeletonComponent from './components/Skeleton/Skeleton'
 import { Link } from "@nextui-org/react";
-import EachCard from "./components/Card/Card";
 import PromotedCard from "./components/Promoted/PromotedCard";
 export default function App() {
 
