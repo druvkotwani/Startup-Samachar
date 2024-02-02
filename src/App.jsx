@@ -1,5 +1,5 @@
 import NavbarComponent from "./components/Navbar/Navbar";
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import Card from './components/Card/Card'
 import SkeletonComponent from './components/Skeleton/Skeleton'
 import { Link } from "@nextui-org/react";
@@ -30,7 +30,10 @@ export default function App() {
   ];
 
 
-  const random = Math.floor(Math.random() * 5)
+  const getRandomIndex = () => Math.floor(Math.random() * 5);
+  const random = useMemo(() => getRandomIndex(), []);
+
+
   const [news, setNews] = useState([])
   const [loading, setLoading] = useState(true)
 
