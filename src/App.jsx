@@ -42,8 +42,7 @@ export default function App() {
       .then(res => res.json())
       .then(data => {
         // Shuffle the data array
-        const shuffledData = data.sort(() => Math.random() - 0.5);
-        setNews(shuffledData);
+        setNews(data);
         setLoading(false)
       });
   }, [])
