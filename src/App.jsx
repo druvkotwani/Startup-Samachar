@@ -4,6 +4,8 @@ import Card from './components/Card/Card'
 import SkeletonComponent from './components/Skeleton/Skeleton'
 import { Link } from "@nextui-org/react";
 import PromotedCard from "./components/Promoted/PromotedCard";
+import { collection, getDocs, onSnapshot } from "firebase/firestore";
+import { firestore } from "./firebase";
 export default function App() {
 
   const options = [
@@ -30,22 +32,37 @@ export default function App() {
   ];
 
 
-  const getRandomIndex = () => Math.floor(Math.random() * 5);
+  const getRandomIndex = () => Math.floor(Math.random() * options.length);
   const random = useMemo(() => getRandomIndex(), []);
 
 
   const [news, setNews] = useState([])
   const [loading, setLoading] = useState(true)
 
+
   useEffect(() => {
-    fetch('https://startup-samachar-api.vercel.app/news')
-      .then(res => res.json())
-      .then(data => {
-        // Shuffle the data array
-        setNews(data);
-        setLoading(false)
-      });
-  }, [])
+    const getContacts = async () => {
+      try {
+        const dataCollection = collection(firestore, "startup-samachar");
+        const unsubscribe = onSnapshot(dataCollection, (snapshot) => {
+          const dataList = snapshot.docs.map((doc) => doc.data());
+          setNews(dataList);
+          console.log(dataList)
+          setLoading(false); // Set loading to false once data is fetched
+        });
+        // Return a cleanup function to unsubscribe from the snapshot listener when the component unmounts
+        return () => unsubscribe();
+      } catch (error) {
+        console.log(error);
+        setLoading(false); // Set loading to false in case of an error
+
+      }
+    };
+
+    getContacts();
+  }, []);
+
+
   return (
     <>
       <NavbarComponent />
