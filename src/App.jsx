@@ -47,7 +47,6 @@ export default function App() {
         const unsubscribe = onSnapshot(dataCollection, (snapshot) => {
           const dataList = snapshot.docs.map((doc) => doc.data());
           setNews(dataList);
-          console.log(dataList)
           setLoading(false); // Set loading to false once data is fetched
         });
         // Return a cleanup function to unsubscribe from the snapshot listener when the component unmounts
