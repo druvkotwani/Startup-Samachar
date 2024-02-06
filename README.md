@@ -31,13 +31,10 @@ Check out the website:
 - Enter the name of your new branch in the text box. (Branch names usually make a reference to what is being changed. Example: `FixMargin`).
 - Click on `Create branch <new branch name>` and this will automatically take you to your new branch. You can make edits on the main branch, but this may cause issues down the line. Best practice is to create a new branch for each separate issue you work on. That way, your `main` branch remains in sync with `leetcode-profiles` `main` branch.
 
-### 3. Setup Firebase:
-- Below are the steps to setup firebase.
-
-### 4. Edit:
+### 3. Edit:
 - Do the desired changes, you want.
 
-### 5. Raise a Pull Request:
+### 4. Raise a Pull Request:
 - And finally, create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 - Great job! 
 
