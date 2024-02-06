@@ -29,7 +29,7 @@ Check out the website:
 ### 2. Create a New Branch:
 - On your new repository's page, click the gray `main` button in the upper left to reveal a dropdown menu.
 - Enter the name of your new branch in the text box. (Branch names usually make a reference to what is being changed. Example: `FixMargin`).
-- Click on `Create branch <new branch name>` and this will automatically take you to your new branch. You can make edits on the main branch, but this may cause issues down the line. Best practice is to create a new branch for each separate issue you work on. That way, your `main` branch remains in sync with `leetcode-profiles` `main` branch.
+- Click on `Create branch <new branch name>` and this will automatically take you to your new branch. You can make edits on the main branch, but this may cause issues down the line. Best practice is to create a new branch for each separate issue you work on. That way, your `main` branch remains in sync with `startup-samachar` `main` branch.
 
 ### 3. Edit:
 - Do the desired changes, you want.
@@ -42,7 +42,7 @@ Check out the website:
 
 
 ## 🚀 Running Frontend
-To run locally, just `cd` into the `client` and run the following commands to run node modules and serve the website locally.
+To run locally, just run the following commands to download node modules and serve the website locally.
 ```bash
 npm i
 ```
