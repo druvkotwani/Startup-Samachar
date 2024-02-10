@@ -29,7 +29,7 @@ const PromotedCard = ({ option }) => {
 
                     <picture>
                         <source srcSet={option.imgSrc} type="image/webp" width="320" height="67" />
-                        <img src={option.imgSrc} alt="Card background" width="320" height="67" className="rounded-xl" />
+                        <img src={option.imgSrc} alt="Startup Samachar" width="320" height="67" className="rounded-xl" />
                     </picture>
 
                 </CardBody>

@@ -28,7 +28,7 @@ const EachCard = ({ heading, source, imgSrc, href }) => {
 
             <CardBody className="flex items-center justify-center overflow-visible py-2  ">
                 <img
-                    alt="Card background"
+                    alt={heading}
                     className=" rounded-xl mt-auto"
                     src={imgSrc}
                     width="320" height="67"
